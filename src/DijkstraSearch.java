@@ -36,10 +36,6 @@ public class DijkstraSearch<V> extends Search<V> {
         }
     }
 
-    public double distTo(V v) {
-        return distTo.getOrDefault(v, Double.POSITIVE_INFINITY);
-    }
-
     private class Node implements Comparable<Node> {
         V vertex;
         double distance;
